@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-outline {
+  -webkit-text-stroke: 1px #FFFFFF33;  
+  color: #FFFFFF03;             
+}
+#slider {
+  overflow-x: auto;
+  white-space: wrap;
+scrollbar-width: none; /* Firefox */
+-ms-overflow-style: none; /* IE and Edge */
+}
+#slider::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera */
+}
