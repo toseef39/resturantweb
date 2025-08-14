@@ -3,7 +3,7 @@ import { TbArrowUpBar } from "react-icons/tb";
 import { Topbar } from "../Topbar";
 import { Navbar } from "../Navbar";
 import icon from "../../assets/icon.svg";
-import icon2 from "../../assets/icon2.svg";
+import icon2 from "../../assets/laptop.svg";
 import line from "../../assets/Union.svg";
 import dot from "../../assets/dot.png";
 import vertical from "../../assets/vertical.png";
