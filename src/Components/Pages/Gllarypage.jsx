@@ -54,7 +54,7 @@ export const Gllarypage = () => {
 
             <div
              className="grid bg-cover bg-no-repeat bg-ce grid-cols-1 md:grid-cols-3 gap-y-4 mx-auto md:mx-0 space-x-2 mt-20">
-              <div style={{backgroundImage:`url(${gallery1})`}} className="w-[250px]  bg-cover bg-no-repeat h-[200px] md:w-[410px] mx-auto md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div style={{backgroundImage:`url(${gallery1})`}} className="w-[250px] bg-cover bg-no-repeat h-[200px] md:w-[410px] mx-auto md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}

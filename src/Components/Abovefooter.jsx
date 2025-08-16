@@ -1,7 +1,12 @@
 import React from 'react'
 import bg2 from "../assets/abovefooterbg.png"
+import { useNavigate } from 'react-router-dom'
 
 export const Abovefooter = () => {
+  const navigate = useNavigate()
+  const handlenavigate =()=>{
+    navigate("/reservation")
+  }
   return (
     <>
       <div
@@ -17,7 +22,7 @@ export const Abovefooter = () => {
               Need A Table On Coffee House
             </h1>
           </div>
-          <button className="text-white uppercase font-semibold w-[200px] h-[55px] border-2 border-white text-center py-3 px-3">
+          <button onClick={handlenavigate} className="text-white uppercase font-semibold w-[200px] h-[55px] border-2 border-white text-center py-3 px-3">
             book a table
           </button>
         </div>

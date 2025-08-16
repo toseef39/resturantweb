@@ -333,10 +333,10 @@ export const Detailblog = () => {
                       name="Type your message"
                       className="w-[250px] md:w-[765px] uppercase border outline-none md:px-6 border-[#EAEAEA] h-[150px]"
                     />
-                    <button className="bg-primary w-[250px] md:w-[765px] h-[55px] text-sm tracking-normal leading-[100%] text-white font-semibold">
+                  </div>
+                    <button className="bg-primary w-[250px] mt-3 ms-10 md:w-[765px] h-[55px] text-sm tracking-normal leading-[100%] text-white font-semibold">
                       Submit Comment
                     </button>
-                  </div>
                 </div>
               </>
             ))}

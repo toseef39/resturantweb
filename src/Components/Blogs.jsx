@@ -29,12 +29,12 @@ export const Blogs = () => {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
         <div className="flex flex-col gap-2">
-          <div className="bg-primary rounded-md py-2 px-4 w-fit">
+          <div className="bg-primary mx-auto md:mx-0 rounded-md py-2 px-4 w-fit">
             <p className="uppercase font-semibold font-jost text-sm tracking-normal text-white">
               CRISPY, EVERY BITE TASTE
             </p>
           </div>
-          <h1 className="font-bold uppercase leading-tight text-3xl sm:text-4xl md:text-[40px] max-w-xl">
+          <h1 className="font-bold uppercase leading-tight text-2xl text-center md:text-left sm:text-4xl md:text-[40px] max-w-xl">
             latest news insights
           </h1>
         </div>

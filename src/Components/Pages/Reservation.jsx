@@ -7,6 +7,8 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { Abovefooter } from "../Abovefooter";
 import { Footer } from "../Footer";
+import bb from "../../assets/bb.jfif"
+import gg from "../../assets/gg.avif"
 
 export const Reservation = () => {
   const navigate = useNavigate();
@@ -51,14 +53,14 @@ export const Reservation = () => {
           <div className="text-white text-center mt-4">
             <span
               onClick={() => navigate("/")}
-              className="cursor-pointer hover:underline"
+              className="cursor-pointer "
             >
               HOME
             </span>{" "}
             /
             <span
               onClick={() => navigate("/reservation")}
-              className="cursor-pointer hover:underline"
+              className="cursor-pointer"
             >
               BOOK A TABLE
             </span>
@@ -100,17 +102,17 @@ export const Reservation = () => {
                 ))}
               </div>
 
-              <button className="w-64 hidden cursor-pointer font-medium text-white uppercase md:flex justify-around items-center h-12 mt-7 mx-auto bg-primary">
+              <button className="md:w-64 w-44 ms-16 md:ms-[490px] cursor-pointer font-medium text-white uppercase md:flex justify-around items-center h-12 mt-7 mx-auto bg-primary">
                 book a table
-                <TfiLayoutLineSolid size={23} className="text-white" />
-                <HiOutlineArrowRight size={23} className="text-white" />
+                <TfiLayoutLineSolid size={23} className="text-white hidden md:block" />
+                <HiOutlineArrowRight size={23} className="text-white hidden md:block" />
               </button>
             </form>
           </div>
         </div>
         <div className="md:flex-row flex flex-col gap-36 justify-center items-center mt-10">
-          <div className="w-[250px] h-[300px] md:w-[543px] md:h-[525px] bg-[#D9D9D9]">
-            <div className=" hidden md:block md:w-[243px] relative top-44 left-96 border-[10px] h-[292px] bg-[#D9D9D9] "></div>
+          <div style={{backgroundImage:`url(${gg})`}} className="w-[250px] bg-center bg-cover bg-no-repeat h-[300px] md:w-[543px] md:h-[525px] bg-[#D9D9D9]">
+            <img src={bb} className="w-[160px] bg-cover h-[180px] md:w-[243px] top-24 left-32 relative md:top-44 md:left-96 border-[10px] md:h-[292px] bg-[#D9D9D9] "/>
           </div>
           <div className="w-screen flex flex-col md:w-[434px] h-[385px] boder boder-[#E9E9E9]">
             <div className="flex flex-col w-screen md:w-[434px] h-[170px] ">
