@@ -168,10 +168,10 @@ navigate("/gallery")
               make reservation
             </p>
           </div>
-          <h1 className="font-bold mt-5 text-2xl text-center md:text-left md:text-[40px] tracking-normal w-[300px] md:w-[430px] h-[78px] leading-[50px]">
+          <h1 className="font-bold mt-5 text-2xl text-center md:text-left md:text-[40px] tracking-normal mx-auto md:mx-0 w-[300px] md:w-[430px] h-[78px] leading-[100%] md:leading-[50px]">
             Welcome To Our <br /> Luxury Restaurant
           </h1>
-          <p className="px-4 md:px-0 text-justify mt-14 text-Paragraph font-normal text-lg leading-7 tracking-normal">
+          <p className="px-4 md:px-0 text-justify md:mt-14 text-Paragraph font-normal text-lg leading-7 tracking-normal">
             The scallops were perfectly cooked, tender, and flavorful, paired
             beautifully with a creamy risotto and seasonal vegetables. The
             presentation was artful, showcasing the chef's attention to detail.
@@ -203,7 +203,7 @@ navigate("/gallery")
       </div>
       <div>
         {/* section 3  */}
-        <div className="w-screen h-[360px] mt-24 md:mt-28">
+        <div className="w-screen h-[250px] md:h-[360px] mt-24 md:mt-28">
           <div className=" flex flex-col md:justify-center items-center gap-[10px] mt-6 ">
             <div className="w-[132px] bg-primary h-8 rounded-md py-[8px] px-4 ">
               <p className="uppercase font-semibold text-sm tracking-normal leading-[100%] text-white">

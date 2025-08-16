@@ -29,6 +29,7 @@ export const Chefdetail = () => {
         </div>
       </div>
       <div className="w-screen px-auto mt-14 space-y-20 md:space-y-0 md:gap-10 md:w-[1280px] h-[850px] md:h-[742px] flex flex-col md:flex-row md:items-center justify-center mx-auto">
+
         <div className="w-screen md:w-[552px] h-[542px] space-y-4">
           <h1 className="font-jost text-center md:text-left font-bold text-3xl md:text-[40px] tracking-normal leading-[100%]">
             Richard John
@@ -47,8 +48,8 @@ export const Chefdetail = () => {
           {/* 1st box  */}
           <div className="border border-b-[#E5E3E3] hidden md:block md:w-[544px]"></div>
           <div className="md:flex-row flex flex-col space-y-6 md:space-y-0 md:gap-20">
-            <div className="flex ">
-              <div className="w-[50px] py-3 h-[50px]">
+            <div className="flex mx-auto md:mx-0">
+              <div className="w-[50px]  py-3 h-[50px]">
                 <IoPersonSharp className="mx-auto" size={20} color="red" />
               </div>
               <div className="flex flex-col space-y-2">
@@ -61,7 +62,7 @@ export const Chefdetail = () => {
               </div>
             </div>
 
-            <div className="flex">
+            <div className="flex mx-auto md:mx-0">
               <div className="w-[50px] py-3 h-[50px]">
                 <MdEmail className="mx-auto" size={20} color="red" />
               </div>
@@ -80,8 +81,8 @@ export const Chefdetail = () => {
 
           <div className="border border-b-[#E5E3E3] md:block hidden md:w-[544px]"></div>
 
-          <div className="flex flex-col md:flex-row md:gap-20">
-            <div className="flex ">
+          <div className="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:gap-20">
+            <div className="flex mx-auto md:mx-0 ">
               <div className="w-[50px] py-3 h-[50px]">
                 <IoPersonSharp className="mx-auto" size={20} color="red" />
               </div>
@@ -95,7 +96,7 @@ export const Chefdetail = () => {
               </div>
             </div>
 
-            <div className="flex ">
+            <div className="flex mx-auto md:mx-0 ">
               <div className="w-[50px] py-3 h-[50px]">
                 <FaFax className="mx-auto" size={20} color="red" />
               </div>
@@ -110,7 +111,7 @@ export const Chefdetail = () => {
             </div>
           </div>
           <div className="border border-b-[#E5E3E3] hidden md:block md:w-[544px]"></div>
-          <button className="w-[120px] md:w-[180px] h-[50px] font-jost font-semibold text-base tracking-normal text-white leading-[100%] bg-primary">
+          <button className="w-[120px] mx-auto md:mx-0 md:w-[180px] h-[50px] font-jost font-semibold text-base tracking-normal text-white leading-[100%] bg-primary">
             Contact me
           </button>
         </div>

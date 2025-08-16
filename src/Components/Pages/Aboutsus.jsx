@@ -18,6 +18,12 @@ import hhhh from "../../assets/hhhh.jpg"
 import cheez from "../../assets/cheez.webp"
 import fries from "../../assets/fries.jpg"
 import halal from "../../assets/halal.webp"
+import gallery1 from "../../assets/gallery1.webp"
+import gallery2 from "../../assets/gallery2.jpg"
+import gallery3 from "../../assets/gallery3.jpg"
+import gallery4 from "../../assets/gallery4.jpg"
+import gallery5 from "../../assets/gallery5.jpg"
+import gallery6 from "../../assets/gallery6.jpg"
 
 
 export const Aboutsus = () => {
@@ -118,7 +124,7 @@ export const Aboutsus = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 mx-auto md:mx-0 space-x-2 mt-20">
-              <div className="min-w-[250px] h-[200px] md:min-w-[410px] mx-auto md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div style={{backgroundImage:`url(${gallery1})`}} className="min-w-[250px] bg-cover bg-no-repeat bg-center h-[200px] md:min-w-[410px] mx-auto md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}
@@ -127,7 +133,7 @@ export const Aboutsus = () => {
                   />
                 </div>
               </div>
-              <div className="w-[250px] h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div style={{backgroundImage:`url(${gallery2})`}} className="w-[250px] bg-cover bg-no-repeat bg-center h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}
@@ -136,7 +142,7 @@ export const Aboutsus = () => {
                   />
                 </div>
               </div>
-              <div className="w-[250px] h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div style={{backgroundImage:`url(${gallery3})`}} className="w-[250px] bg-cover bg-no-repeat bg-center h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}
@@ -146,7 +152,7 @@ export const Aboutsus = () => {
                 </div>
               </div>
 
-              <div className="w-[250px] h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div style={{backgroundImage:`url(${gallery4})`}} className="w-[250px] bg-cover bg-no-repeat bg-center h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}
@@ -155,7 +161,7 @@ export const Aboutsus = () => {
                   />
                 </div>
               </div>
-              <div className="w-[250px] h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div style={{backgroundImage:`url(${gallery5})`}} className="w-[250px] bg-cover bg-no-repeat bg-center h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}
@@ -164,7 +170,7 @@ export const Aboutsus = () => {
                   />
                 </div>
               </div>
-              <div className="w-[250px] h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div style={{backgroundImage:`url(${gallery6})`}} className="w-[250px] bg-cover bg-no-repeat bg-center h-[200px] md:w-[410px] mx-auto  md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}

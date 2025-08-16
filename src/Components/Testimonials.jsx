@@ -27,7 +27,7 @@ export const Testimonials = () => {
           <img src={first} alt="" />
         </div>
         <div className=" flex flex-col w-screen justify-center items-center gap-[10px] ">
-          <div className="w-[150px] md:w-[176px] mx-auto md:mx-0 py-2 px-1 bg-primary h-8 rounded-sm md:rounded-md md:py-[8px] md:px-4 ">
+          <div className="w-[170px] md:w-[176px] mx-auto md:mx-0 py-2 px-2 font-semibold bg-primary h-8 rounded-sm md:rounded-md md:py-[8px] md:px-4 ">
             <p className="uppercase font-normal text-sm tracking-normal leading-[100%] text-white">
               client Testimonials
             </p>

@@ -14,6 +14,14 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 import { BsArrow90DegLeft } from "react-icons/bs";
+import blogpic from "../../assets/blogpic.png"
+import phela from "../../assets/phela.jpg"
+import dusra from "../../assets/dusra.jfif"
+import thisra from "../../assets/thisra.jfif"
+import willi from "../../assets/ceo.jfif"
+import willi1 from "../../assets/mark.jfif"
+import willi2 from "../../assets/ceo1.jfif"
+import willi3 from "../../assets/ceo22.jfif"
 
 export const Detailblog = () => {
   const navigate = useNavigate();
@@ -23,7 +31,7 @@ export const Detailblog = () => {
 
   const comments = [
     {
-      img: "",
+      img: willi1,
       date: "10 Mar, 2022",
       name: "Daniel Adam",
       response: "Reply",
@@ -31,7 +39,7 @@ export const Detailblog = () => {
         "Collaboratively empower multifunctional e-commerce for prospective applications. Seamlessly productivate plug-and-play markets whereas synergistic scenarios.",
     },
     {
-      img: "",
+      img: willi2,
       date: "10 Mar, 2022",
       name: "Zenelia Lozhe",
       response: "Reply",
@@ -39,7 +47,7 @@ export const Detailblog = () => {
         "Collaboratively empower multifunctional e-commerce for prospective applications. Seamlessly productivate plug-and-play markets whereas synergistic scenarios.",
     },
     {
-      img: "",
+      img: willi3,
       date: "10 Mar, 2022",
       name: "Jhon Smith",
       response: "Reply",
@@ -87,9 +95,10 @@ export const Detailblog = () => {
             {blogsdetails.map((items, id) => (
               <>
                 <div key={id} className="flex flex-col space-y-4">
-                  <div className="w-[250px] mx-auto md:mx-0 h-[250px] md:w-[829px] md:h-[450px] bg-[#D9D9D9]">
-                    {items.img}
-                  </div>
+                  {/* <div className="w-[300px] mx-auto md:mx-0 h-[250px] md:w-[829px] md:h-[450px] bg-[#D9D9D9]"> */}
+                    
+                    <img src={blogpic} className="w-[300px] bg-cover mx-auto md:mx-0 h-[250px] md:w-[829px] md:h-[450px]" alt="" />
+                  {/* </div> */}
                   <div className="md:block mx-auto md:mx-0 hidden w-[95px] h-[30px] bg-primary relative bottom-[420px] left-4 ">
                     <p className="font-semibold text-white text-sm tracking-normal text-center py-2 leading-[100%]">
                       {items.btn2}
@@ -162,12 +171,9 @@ export const Detailblog = () => {
                     key={id}
                     className="flex flex-col md:flex-row w-[250px] gap-3 mx-auto h-[600px] md:w-[845px] md:h-[353px]"
                   >
-                    {Array.from({ length: 3 }, (_, id) => (
-                      <div
-                        key={id}
-                        className=" w-[250px] md:w-[275px] h-[350px] bg-[#D9D9D9]"
-                      ></div>
-                    ))}
+                    <img className=" w-[250px] md:w-[275px] bg-cover h-[350px]" src={phela} alt="" />
+                    <img className=" w-[250px] md:w-[275px] bg-cover h-[350px]" src={dusra} alt="" />
+                    <img className=" w-[250px] md:w-[275px] bg-cover h-[350px]" src={thisra} alt="" />
                   </div>
                   <div>
                     <p className="font-jost w-screen mb-14 md:w-[749px] md:h-[38px] text-justify md:text-left px-10 md:px-0 text-Paragraph font-normal  md:text-base tracking-normal leading-[26px] ">
@@ -235,7 +241,7 @@ export const Detailblog = () => {
                   <div className="w-screen md:w-[845px]  h-[249px] md:flex-row flex flex-col mb-44 md:mb-0 justify-center items-center gap-10">
                     <img
                       className="min-w-[189px] min-h-[189px] bg-[#E3E3E3] "
-                      src=""
+                      src={willi}
                       alt=""
                     />
                     <div className="flex flex-col">
@@ -267,7 +273,8 @@ export const Detailblog = () => {
                         >
                           
                           <div className="w-[80px] h-[80px] md:w-[110px] md:h-[110px] bg-[#E3E3E3] flex-shrink-0">
-                            {items.img}
+                          
+                            <img src={items.img} className="w-[80px] h-[80px] md:w-[110px] md:h-[110px]" alt="" />
                           </div>
 
                      
