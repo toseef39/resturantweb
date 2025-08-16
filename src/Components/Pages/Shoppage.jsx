@@ -4,6 +4,7 @@ import { Navbar } from "../Navbar";
 import { Abovefooter } from "../Abovefooter";
 import { Footer } from "../Footer";
 import { useNavigate } from "react-router-dom";
+import grilled from "../../assets/griiled.webp"
 
 export const Shoppage = () => {
   const [activetab, setActivetab] = useState("para")
@@ -25,7 +26,7 @@ export const Shoppage = () => {
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
-          <h1 className="text-6xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
+          <h1 className="text-4xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase mt-32 md:mt-36 ">
             Shop Details
           </h1>
 
@@ -38,7 +39,7 @@ export const Shoppage = () => {
           </h2>
         </div>
         <div className="w-screen md:flex-row flex flex-col justify-center items-center mt-20 gap-10">
-          <div className="w-[250px] h-[320px] md:w-[600px] md:h-[620px] bg-[#D9D9D9]"></div>
+          <img src={grilled} className="w-[250px] h-[320px] md:w-[600px] md:h-[620px] object-cover"/>
           <div className="w-screen md:w-[529px] h-[456px] space-y-6 flex flex-col">
             <h1 className="w-screen text-center md:text-left md:w-[468px] h-[25px] text-2xl md:text-[36px] font-semibold font-jost tracking-normal leading-[100%] ">
               Grilled Lemon Herb Chicken
@@ -63,7 +64,7 @@ export const Shoppage = () => {
               venenatis
             </p>
             <div className="flex flex-col md:flex-row mx-auto md:mx-0 gap-5">
-              <button className="w-[101px] h-[50px] bg-black text-white font-semibold text-lg tracking-normal leading-[100%] ">
+              <button className="w-[164px] h-[50px] bg-black text-white font-semibold text-lg tracking-normal leading-[100%] ">
                 1
               </button>
               <button className="w-[164px] h-[50px] bg-primary text-white font-semibold text-sm tracking-normal leading-[100%] ">
@@ -85,7 +86,7 @@ export const Shoppage = () => {
         <div className="flex flex-col w-screen md:flex-row items-center justify-start md:ms-[178px] gap-10 mt-32 md:mt-20">
           <button
           onClick={()=>setActivetab("para")}
-           className={`text-Paragraph font-semibold text-sm tracking-normal w-[200px] py-2 leading-[100%] ${
+           className={`text-Paragraph font-semibold text-sm tracking-normal w-[200px] py-4 leading-[100%] ${
               activetab === "para"
                 ? "bg-blue-600 text-white rounded-md"
                 : "bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-md"
@@ -94,7 +95,7 @@ export const Shoppage = () => {
           </button>
           <button
           onClick={()=>setActivetab("info")}
-           className={`text-Paragraph font-semibold text-sm tracking-normal w-[200px] py-2 leading-[100%] ${
+           className={`text-Paragraph font-semibold text-sm tracking-normal w-[200px] py-4 leading-[100%] ${
               activetab === "info"
                 ? "bg-blue-600 text-white rounded-md"
                 : "bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300"
@@ -103,7 +104,7 @@ export const Shoppage = () => {
           </button>
           <button 
           onClick={()=>setActivetab("review")}
-          className={`text-Paragraph font-semibold text-sm tracking-normal w-[200px] py-2 leading-[100%] ${activetab === "review"
+          className={`text-Paragraph font-semibold text-sm tracking-normal w-[200px] py-4 leading-[100%] ${activetab === "review"
             ? "bg-blue-500 text-white rounded-md" : "bg-gray-200 rounded-md text-gray-800 hover:bg-gray-300"
           }`}>
             Review (03)

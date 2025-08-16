@@ -6,6 +6,7 @@ import { Abovefooter } from "../Abovefooter";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaFax } from "react-icons/fa";
+import ceo from "../../assets/ceoo.webp"
 
 export const Chefdetail = () => {
   return (
@@ -14,7 +15,7 @@ export const Chefdetail = () => {
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
-          <h1 className="text-5xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
+          <h1 className="text-4xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase mt-32 md:mt-36 ">
             our chef
           </h1>
 
@@ -113,7 +114,7 @@ export const Chefdetail = () => {
             Contact me
           </button>
         </div>
-        <img className="w-[280px] mx-auto min-h-[300px] md:w-[480px] md:h-[542px]  bg-[#D9D9D9]"/>
+        <img src={ceo} className="w-[280px] object-cover mx-auto min-h-[300px] md:w-[480px] md:h-[542px]"/>
       </div>
       <Abovefooter/>
       <Footer/>

@@ -4,6 +4,7 @@ import dot from "../assets/dot.png";
 import bg from "../assets/bg.png";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import waiter from "../assets/waiter.jpg"
 
 export const Team = () => {
   return (
@@ -31,21 +32,21 @@ export const Team = () => {
       </div>
       <div className="flex flex-col md:flex-row justify-center gap-7 relative md:top-32 z-50">
         <div className="flex flex-col mx-auto md:mx-0">
-          <div className="w-[260px] h-[300px]  md:w-[410px] md:h-[410px] bg-[#D9D9D9]"></div>
+          <img src={waiter} className="w-[260px] h-[300px]  md:w-[410px] md:h-[410px]"/>
           <div className="md:w-[410px] w-[260px] h-20 text-center bg-[#4F4F4F]">
             <h1 className="font-bold text-white">Kuman Tunman</h1>
             <p className="font-medium text-sm text-white font-jost">Waiter</p>
           </div>
         </div>
         <div className="flex flex-col mx-auto md:mx-0">
-          <div className="w-[260px] h-[300px] md:w-[410px] md:h-[410px] bg-[#D9D9D9]"></div>
+          <img src={waiter} className="w-[260px] h-[300px]  md:w-[410px] md:h-[410px]"/>
           <div className="w-[260px] md:w-[410px] h-20 text-center bg-[#4F4F4F]">
             <h1 className="font-bold text-white">Kuman Tunman</h1>
             <p className="font-medium text-sm text-white font-jost">Waiter</p>
           </div>
         </div>
         <div className="flex flex-col mx-auto md:mx-0">
-          <div className="w-[260px] h-[300px] md:w-[410px] md:h-[410px] bg-[#D9D9D9]"></div>
+          <img src={waiter} className="w-[260px] h-[300px]  md:w-[410px] md:h-[410px]"/>
           <div className="w-[260px] md:w-[410px] h-20 text-center bg-[#4F4F4F]">
             <h1 className="font-bold text-white">Kuman Tunman</h1>
             <p className="font-medium text-sm text-white font-jost">Waiter</p>

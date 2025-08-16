@@ -3,6 +3,7 @@ import bubble from "../assets/bubble.png";
 import vertical from "../assets/vertical.png";
 import dot from "../assets/dot.png";
 import fullburger from "../assets/fullburger.png";
+import reserve from "../assets/reserve.jpg"
 
 export const Booktable = () => {
   const [select, setselect] = useState();
@@ -98,7 +99,7 @@ export const Booktable = () => {
               </button>
             </div>
           </div>
-          <div className="w-[518px] h-[480px] bg-[#D9D9D9] "></div>
+          <img src={reserve} className="w-[518px] h-[480px]"/>
         </div>
        
       </div>

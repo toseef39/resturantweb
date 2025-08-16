@@ -14,11 +14,16 @@ import pizza from "../../assets/pizza.svg";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { Abovefooter } from "../Abovefooter";
 import { Footer } from "../Footer";
+import hhhh from "../../assets/hhhh.jpg"
+import cheez from "../../assets/cheez.webp"
+import fries from "../../assets/fries.jpg"
+import halal from "../../assets/halal.webp"
+
 
 export const Aboutsus = () => {
   return (
     <>
-      <div className="flex flex-wrap flex-col ">
+      <div className="flex overflow-hidden flex-wrap flex-col ">
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
@@ -79,8 +84,7 @@ export const Aboutsus = () => {
                 </div>
               </div>
 
-              <div className="w-[300px] mt-7 md:mt-0 mx-auto h-[350px] md:mx-0 md:w-[652px] md:h-[478px] bg-[#D9D9D9] "></div>
-            </div>
+              <img src={hhhh} className="w-[300px] mt-7 md:mt-0 mx-auto h-[350px] md:mx-0 md:w-[552px] md:h-[478px] bg-[#D9D9D9] "/>            </div>
           </div>
         </div>
 
@@ -114,7 +118,7 @@ export const Aboutsus = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 mx-auto md:mx-0 space-x-2 mt-20">
-              <div className="w-[250px] h-[200px] md:w-[410px] mx-auto md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
+              <div className="min-w-[250px] h-[200px] md:min-w-[410px] mx-auto md:h-[343px] bg-[#D9D9D9] hover:bg-primary relative group">
                 <div className="absolute md:top-2 ms-24 md:ms-44 mt-20 md:mt-36 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <MdOutlineRemoveRedEye
                     size={40}
@@ -214,7 +218,7 @@ export const Aboutsus = () => {
       <div className="flex flex-wrap gap-10 justify-center mt-9 items-center">
         {/* 1st div    */}
         <div className="flex flex-col gap-y-9">
-          <div className="w-[250px] mx-auto md:w-[311px] h-[275px] bg-[#D9D9D9]"></div>
+          <img src={cheez} className="w-[250px] mx-auto md:w-[311px] object-cover h-[275px] "/>
           <div>
             <div className="w-[311px] h-[100px] ">
               <h1 className="text-center font-bold font-jost tracking-normal leading-[100%] uppercase text-[22px]">
@@ -231,7 +235,7 @@ export const Aboutsus = () => {
         {/* 2nd div  */}
 
         <div className="flex flex-col gap-y-9">
-          <div className="w-[250px] mx-auto md:w-[311px] h-[275px] bg-[#D9D9D9]"></div>
+          <img src={fries} className="w-[250px] mx-auto object-cover md:w-[311px] h-[275px]"/>
           <div>
             <div className="w-[311px] h-[100px] ">
               <h5 className="text-center font-bold font-jost tracking-normal leading-[100%] uppercase text-[22px]">
@@ -247,7 +251,7 @@ export const Aboutsus = () => {
 
         {/* 3rd div  */}
         <div className="flex flex-col gap-y-9">
-          <div className="w-[250px] mx-auto md:w-[311px] h-[275px] bg-[#D9D9D9]"></div>
+          <img src={halal} className="w-[250px] mx-auto md:w-[311px] h-[275px] object-cover"/>
           <div>
             <div className="w-[311px] h-[100px] ">
               <h5 className="text-center font-bold font-jost tracking-normal leading-[100%] uppercase text-[22px]">

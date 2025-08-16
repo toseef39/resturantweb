@@ -63,7 +63,7 @@ export const Detailblog = () => {
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
-          <h1 className="text-6xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
+          <h1 className="text-4xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase mt-32 md:mt-36 ">
             Latest News
           </h1>
 

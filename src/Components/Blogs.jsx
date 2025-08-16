@@ -3,6 +3,7 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { GoArrowUpRight } from "react-icons/go";
 import { TbMessageCircleUser } from "react-icons/tb";
+import first from "../assets/fff.png"
 
 export const Blogs = () => {
   const blogData = [
@@ -49,7 +50,7 @@ export const Blogs = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {blogData.map((blog, index) => (
           <div key={index} className="flex flex-col">
-            <div className="bg-[#D9D9D9] w-full h-64 rounded-md"></div>
+            <img src={first} className="bg-[#D9D9D9] w-full h-64 rounded-md"/>
             <div className="mt-4">
               <h5 className="uppercase text-Paragraph font-semibold">
                 {blog.category}

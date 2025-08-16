@@ -8,6 +8,15 @@ import vertical from "../../assets/vertical.png";
 import dot from "../../assets/dot.png";
 import { FaComments } from "react-icons/fa6";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import mirchi from "../../assets/mirchi.jpg"
+import mash from "../../assets/mash.jpg"
+import sal from "../../assets/sal.webp"
+import salad2 from "../../assets/salad2.jpg"
+import rib2 from "../../assets/rib2.jpg"
+import rost2 from "../../assets/rost2.jpg"
+import tri from "../../assets/tri.webp"
+import tri1 from "../../assets/tri1.webp"
+import mark from "../../assets/mark.jfif"
 
 export const Menu = () => {
   const [select, setselect] = useState("1 person");
@@ -16,37 +25,37 @@ export const Menu = () => {
 
   const menulist = [
     {
-      img: "",
+      img: mirchi,
       name: "Wild Mushroom Arancini",
       para: "Ricotta, goat cheese, beetroot and dateline.",
       price: "$15.00",
     },
     {
-      img: "",
+      img:sal,
       name: "Honey Glazed Salmon",
       para: "Ricotta, goat cheese, beetroot and dateline.",
       price: "$15.00",
     },
     {
-      img: "",
+      img: mash,
       name: "Truffle Mushroom Risotto",
       para: "Ricotta, goat cheese, beetroot and dateline.",
       price: "$15.00",
     },
     {
-      img: "",
+      img: salad2,
       name: "Mediterranean Quinoa Salad",
       para: "Ricotta, goat cheese, beetroot and dateline.",
       price: "$15.00",
     },
     {
-      img: "",
+      img: rib2,
       name: "Braised Short Ribs",
       para: "Ricotta, goat cheese, beetroot and dateline.",
       price: "$15.00",
     },
     {
-      img: "",
+      img: rost2,
       name: "Roasted Vegetable Platter",
       para: "Ricotta, goat cheese, beetroot and dateline.",
       price: "$15.00",
@@ -189,11 +198,11 @@ export const Menu = () => {
 
         <div className="mx-auto max-w-[1300px] flex flex-col justify-center items-center  h-auto  mt-10">
           <div className="w-full md:w-[1280px] flex flex-col md:flex-row mx-auto border-primary justify-center gap-10 mt-10">
-            <div className="w-[250px] mx-auto md:mx-0 md:w-[640px] h-[366px] bg-[#D9D9D9]"></div>
+            <img src={tri1} className="w-[250px] mx-auto md:mx-0 md:w-[640px] h-[366px] object-cover"/>
             <div className="w-[250px] md:w-[528px] mt-3  mx-auto md:mx-0 flex flex-col gap-5">
               <div className="flex flex-col md:flex-row mx-auto md:mx-0 gap-5">
                 <div className="flex items-center gap-2">
-                  <div className="w-[36px] h-[36px] rounded-full bg-[#D9D9D9]"></div>
+                  <img src={mark} className="w-[36px] h-[36px] rounded-full bg-[#D9D9D9]"/>
                   <h1 className="font-jost font-semibold text-sm">
                     Markus Daniel
                   </h1>
@@ -216,7 +225,7 @@ export const Menu = () => {
             <div className="w-screen md:w-[528px] mx-auto md:mx-0 flex  flex-col gap-5">
               <div className="flex flex-col md:flex-row mx-auto md:mx-0 gap-5">
                 <div className="flex items-center gap-2">
-                  <div className="w-[36px] h-[36px] rounded-full bg-[#D9D9D9]"></div>
+                  <img src={mark} className="w-[36px] h-[36px] rounded-full bg-[#D9D9D9]"/>
                   <h1 className="font-jost font-semibold text-sm">
                     Markus Daniel
                   </h1>
@@ -233,7 +242,7 @@ export const Menu = () => {
                 Read more <FaLongArrowAltRight size={23} color="red" />
               </button>
             </div>
-            <div className="w-[250px] md:w-[640px] h-[366px] bg-[#D9D9D9]"></div>
+            <img src={tri} className="w-[250px] md:w-[640px] h-[366px] object-cover"/>
           </div>
         </div>
       </div>

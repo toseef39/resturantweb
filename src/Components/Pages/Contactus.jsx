@@ -15,7 +15,7 @@ export const Contactus = () => {
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
-          <h1 className="text-6xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
+          <h1 className="text-4xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
             contact Us
           </h1>
          
@@ -104,14 +104,14 @@ export const Contactus = () => {
           <div className="flex flex-col flex-wrap md:justify-center mt-40 md:mt-20 gap-y-5 items-center">
             <div className="md:flex-row flex flex-col md:justify-center gap-4">
               <input
-                className="w-[300px] md:w-[530px] h-[55px] bg-slate-600 border text-center outline-none border-[#EAEAEA]"
+                className="w-[300px] md:w-[530px] h-[55px] border text-center outline-none border-[#EAEAEA]"
                 placeholder="Your Name"
                 type="text"
                 name="name"
               />
 
               <input
-                className="w-[300px] md:w-[530px] bg-black h-[55px] border text-center outline-none border-[#EAEAEA]"
+                className="w-[300px] md:w-[530px] h-[55px] border text-center outline-none border-[#EAEAEA]"
                 placeholder="Email"
                 type="text"
                 name="email"
@@ -121,13 +121,13 @@ export const Contactus = () => {
               type="text"
               placeholder="Select subject"
               name="select subject"
-              className="w-[300px] md:w-[1079px] border outline-none px-6 bg-red-400 border-[#EAEAEA] h-[55px]"
+              className="w-[300px] md:w-[1079px] border outline-none text-center md:text-left md:px-6  border-[#EAEAEA] h-[55px]"
             />
             <input
               type="text"
               placeholder="Select subject"
               name="Type your message"
-              className="w-[300px] md:w-[1079px] uppercase border outline-none md:px-6 bg-red-400 border-[#EAEAEA] h-[135px]"
+              className="w-[300px] md:w-[1079px] uppercase border outline-none text-center md:text-left md:px-6   border-[#EAEAEA] h-[135px]"
             />
           </div>
         </div>

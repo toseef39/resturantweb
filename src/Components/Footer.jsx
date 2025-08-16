@@ -2,6 +2,12 @@ import React from "react";
 import logo from "../assets/logo.png"
 import footerbg from "../assets/footerbg.png";
 import { FaArrowRight } from "react-icons/fa";
+import gallery1 from "../assets/gallery1.webp"
+import gallery2 from "../assets/gallery2.jpg"
+import gallery3 from "../assets/gallery3.jpg"
+import gallery4 from "../assets/gallery4.jpg"
+import gallery5 from "../assets/gallery5.jpg"
+import gallery6 from "../assets/gallery6.jpg"
 export const Footer = () => {
   return (
     <>
@@ -63,7 +69,6 @@ export const Footer = () => {
               Working Hours
             </h1>
             <div className="w-[254px] h-1 border-2 border-t-0 border-x-0 border-b-[#3A3940] my-3"></div>
-
             <p className="text-white font-jost text-base ">
               Monday - Friday09:00 - 22:00
             </p>
@@ -85,12 +90,12 @@ export const Footer = () => {
             </h1>
             <div className="w-[254px] h-1  border-2 border-t-0 border-x-0 border-b-[#3A3940] my-3"></div>
             <div className="flex flex-wrap gap-1">
-              <p className="bg-[#D9D9D9] w-[80px] h-[80px]"></p>
-              <p className="bg-[#D9D9D9] w-[80px] h-[80px]"></p>
-              <p className="bg-[#D9D9D9] w-[80px] h-[80px]"></p>
-              <p className="bg-[#D9D9D9] w-[80px] h-[80px]"></p>
-              <p className="bg-[#D9D9D9] w-[80px] h-[80px]"></p>
-              <p className="bg-[#D9D9D9] w-[80px] h-[80px]"></p>
+              <p style={{backgroundImage:`url(${gallery1})`}} className="bg-[#D9D9D9] bg-center bg-no-repeat bg-cover  w-[80px] h-[80px]"></p>
+              <p style={{backgroundImage:`url(${gallery2})`}} className="bg-[#D9D9D9] bg-center bg-no-repeat bg-cover  w-[80px] h-[80px]"></p>
+              <p style={{backgroundImage:`url(${gallery3})`}} className="bg-[#D9D9D9] bg-center bg-no-repeat bg-cover  w-[80px] h-[80px]"></p>
+              <p style={{backgroundImage:`url(${gallery4})`}} className="bg-[#D9D9D9] bg-center bg-no-repeat bg-cover  w-[80px] h-[80px]"></p>
+              <p style={{backgroundImage:`url(${gallery5})`}} className="bg-[#D9D9D9] bg-center bg-no-repeat bg-cover  w-[80px] h-[80px]"></p>
+              <p style={{backgroundImage:`url(${gallery6})`}} className="bg-[#D9D9D9] bg-center bg-no-repeat bg-cover  w-[80px] h-[80px]"></p>
             </div>
           </div>
         </div>

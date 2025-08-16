@@ -9,6 +9,10 @@ import { Footer } from "../Footer";
 import { FaArrowRight } from "react-icons/fa6";
 import { Sidebar } from "./Sidebar";
 import { useNavigate } from "react-router-dom";
+import blog1 from "../../assets/blog1.avif"
+import blog2 from "../../assets/blog2.jfif"
+import blog3 from "../../assets/blog3.jfif"
+import blog4 from "../../assets/blog4.jfif"
 
 export const Blog = () => {
 const navigate = useNavigate()
@@ -18,7 +22,7 @@ const handlenavigation = ()=>{
 
   const blogsdetails = [
     {
-      img: "",
+      img: blog1,
       btn2: "Foodies",
       comments: "by admin",
       date: "24 Feb, 2024",
@@ -27,7 +31,7 @@ const handlenavigation = ()=>{
       btn: "Read Details  ",
     },
     {
-      img: "",
+      img: blog2,
       btn2: "Foodies",
       comments: "by admin",
       date: "24 Feb, 2024",
@@ -36,7 +40,7 @@ const handlenavigation = ()=>{
       btn: "Read Details",
     },
     {
-      img: "",
+      img: blog3,
       btn2: "Foodies",
       comments: "by admin",
       date: "24 Feb, 2024",
@@ -45,7 +49,7 @@ const handlenavigation = ()=>{
       btn: "Read Details",
     },
     {
-      img: "",
+      img: blog4,
       btn2: "Foodies",
       comments: "by admin",
       date: "24 Feb, 2024",
@@ -60,7 +64,7 @@ const handlenavigation = ()=>{
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
-          <h1 className="text-6xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
+          <h1 className="text-4xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase mt-32 md:mt-36 ">
             Latest News
           </h1>
 
@@ -75,12 +79,12 @@ const handlenavigation = ()=>{
           </h2>
         </div>
         <div className="flex justify-around">
-          <div className="flex flex-col w-screen md:w-[829px] h-[732px] mt-10 mb-[2300px] space-y-9">
+          <div className="flex flex-col w-screen md:w-[829px] h-[732px] mt-10 mb-[1950px] md:mb-[2300px] space-y-9">
             {blogsdetails.map((items, id) => (
               <>
                 <div key={id} className="flex flex-col space-y-6">
-                  <div className="w-[250px] mx-auto md:mx-0 h-[250px] md:w-[829px] md:h-[450px] bg-[#D9D9D9]">
-                    {items.img}
+                  <div className="w-[300px] mx-auto md:mx-0 h-[250px] md:w-[829px] md:h-[450px] bg-[#D9D9D9]">
+                    <img className="w-[300px] mx-auto md:mx-0 h-[250px] md:w-[829px] md:h-[450px] object-cover" src={items.img} alt="" />
                   </div>
                   <div className="md:block mx-auto md:mx-0 hidden w-[95px] h-[30px] bg-primary relative bottom-[420px] left-4 ">
                     <p className="font-semibold text-white text-sm tracking-normal text-center py-2 leading-[100%]">

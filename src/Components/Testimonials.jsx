@@ -6,6 +6,7 @@ import second from "../assets/second.png";
 import comma from "../assets/comma.png";
 import paata from "../assets/paata.png"
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import amanda from "../assets/amanda.jpg"
 
 
 
@@ -67,7 +68,7 @@ export const Testimonials = () => {
           <div className="md:w-[434px] mt-32 md:mt-10 flex h-16 gap-3 items-center">
             <div className="flex gap-40">
               <div className="flex justify-center items-center gap-2 md:gap-4">
-                <div className="bg-Paragraph w-[40px] h-[40px] md:w-[65px] md:h-[65px] rounded-full "></div>
+                <img src={amanda} className="w-[40px] h-[40px] md:w-[65px] md:h-[65px] rounded-full "/>
                 <div className="flex flex-col">
                   <h1 className="md:font-bold font-medium">Amanda Martin</h1>
                   <p className="text-Paragraph text-sm">Food Reviewer</p>
@@ -86,7 +87,7 @@ export const Testimonials = () => {
           <div className="md:w-[434px] mt-32 md:mt-10 flex h-16 gap-3 items-center">
             <div className="flex gap-40">
               <div className="flex justify-center items-center gap-2 md:gap-4">
-                <div className="bg-Paragraph w-[40px] h-[40px] md:w-[65px] md:h-[65px] rounded-full "></div>
+                <img src={amanda} className="w-[40px] h-[40px] md:w-[65px] md:h-[65px] rounded-full "/>
                 <div className="flex flex-col">
                   <h1 className="md:font-bold font-medium">Amanda Martin</h1>
                   <p className="text-Paragraph text-sm">Food Reviewer</p>
@@ -105,7 +106,7 @@ export const Testimonials = () => {
           <div className="md:w-[434px] mt-32 md:mt-10 flex h-16 gap-3 items-center">
             <div className="flex gap-40">
               <div className="flex justify-center items-center gap-2 md:gap-4">
-                <div className="bg-Paragraph w-[40px] h-[40px] md:w-[65px] md:h-[65px] rounded-full "></div>
+                <img src={amanda} className="w-[40px] h-[40px] md:w-[65px] md:h-[65px] rounded-full "/>
                 <div className="flex flex-col">
                   <h1 className="md:font-bold font-medium">Amanda Martin</h1>
                   <p className="text-Paragraph text-sm">Food Reviewer</p>

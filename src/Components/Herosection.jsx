@@ -20,28 +20,45 @@ import { Navbar } from "./Navbar";
 import { Topbar } from "./Topbar";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import slider from "../assets/slider.png"
+import welcome from ".././assets/welcom.jpg"
+import wedding from ".././assets/wedding.jpg"
+import buffet from ".././assets/buffet.jpg"
+import party from ".././assets/party.jpg"
+import rost from ".././assets/rost.jpg"
+import salad from ".././assets/salad.jpg"
+import masala from ".././assets/masala.jpg"
+import pasta from ".././assets/pasta.jpg"
+import veg from ".././assets/veg.jpg"
+import cake from ".././assets/cake.jpg"
+import gallery1 from "../assets/gallery1.webp"
+import gallery2 from "../assets/gallery2.jpg"
+import gallery3 from "../assets/gallery3.jpg"
+import gallery4 from "../assets/gallery4.jpg"
+import gallery5 from "../assets/gallery5.jpg"
+import gallery6 from "../assets/gallery6.jpg"
 
 export const Herosection = () => {
   const navigate = useNavigate()
 
-  const handlenavigatec= ()=>{
+  const handlenavigate = ()=>{
 navigate("/gallery")
   };
   const serivcesboxes = [
     {
-      img: "",
+      img: wedding,
       headings: "WEDDING SERVICES",
       para: "The chocolate fondant which did not disappoint It was rich and indulgent, with a gooey center that was pure bliss.",
       btn: "Read More",
     },
     {
-      img: "",
+      img: buffet,
       headings: "Buffet Service",
       para: "Assertively myocardinate robust e-tailers for extensible human capital. dpropriately benchmark networks bliss blisss.",
       btn: "Read More",
     },
     {
-      img: "",
+      img: party,
       headings: "Party Service",
       para: "Assertively myocardinate robust e-tailers for extensible human capital. dpropriately benchmark networks blisss bliss.",
       btn: "Read More",
@@ -55,7 +72,7 @@ navigate("/gallery")
       btn: "$15.00",
     },
     {
-      // img:"",
+      img: rost,
       headings: "Roasted Vegetable Platter",
       para: "Non nisi est sit amet facilisis magna",
       btn: "$15.00",
@@ -85,37 +102,37 @@ navigate("/gallery")
 
   const foodlist = [
     {
-      img: "",
+      img: salad,
       star: <CiStar color="#CB3A1A" />,
       heading: "Classic Caesar Salad",
       price: "$15.00",
     },
     {
-      img: "",
+      img: rost,
       star: <CiStar color="#CB3A1A" />,
       heading: "Braised Short Ribs",
       price: "$15.00",
     },
     {
-      img: "",
+      img: masala,
       star: <CiStar color="#CB3A1A" />,
       heading: "Chicken Masala",
       price: "$15.00",
     },
     {
-      img: "",
+      img: pasta,
       star: <CiStar color="#CB3A1A" />,
       heading: "Chicken Alfredo Pasta",
       price: "$15.00",
     },
     {
-      img: "",
+      img: veg,
       star: <CiStar color="#CB3A1A" />,
       heading: "Vegan Buddha Bowl",
       price: "$15.00",
     },
     {
-      img: "",
+      img: cake,
       star: <CiStar color="#CB3A1A" />,
       heading: "Chocolate Lava Cake",
       price: "$15.00",
@@ -135,54 +152,16 @@ navigate("/gallery")
   return (
     <div className="overflow-hidden">
       {/* slider  */}
-
-      <div className="w-screen h-[350px] md:h-[650px] border-2 bg-Paragraph ">
         <Topbar />
         <Navbar />
-        <div className="md:border flex flex-wrap justify-around items-center border-white w-screen md:w-[1200px] mt-[50px] mx-auto md:h-[400px]">
-          <div>
-            <p className="hidden md:block -rotate-90 text-white">
-              Opening Hours: 18:00 - 02:00
-            </p>
-          </div>
-          <div>
-            <h1 className=" text-2xl font-semibold mt-6 md:w-[681px] md:h-[245px] mx-auto md:text-5xl leading-[100%] tracking-normal uppercase text-white text-center ">
-              The Great <br />
-              <span className="md:text-[80px] text-3xl leading-[100%] tracking-normal align-middle text-white font-bold">
-                Flavored Food
-              </span>
-              <br />
-              <span className="uppercase text-sm md:text-3xl"> Part Of Us</span>
-            </h1>
-            <div className="md:w-[279.63px] md:h-[30px] md:flex-row flex flex-col text-center mt-10 gap-6 mx-auto cursor-pointer">
-              <p className="uppercase hover:underline  hover:mt-1 text-white font-semibold text-[10px] md:text-base tracking-normal leading-[100%]">
-                Book a table
-              </p>
-              <p className="uppercase hover:underline hover:mt-1 text-white font-semibold text-[10px] md:text-base tracking-normal leading-[100%]">
-                view manu
-              </p>
-            </div>
-            <div className=" hidden md:flex gap-2 justify-center relative top-7 ">
-              <div className="bg-[#D9D9D9] w-[55px] h-[55px] rounded-full"></div>
-              <div className="bg-[#D9D9D9] w-[55px] h-[55px] rounded-full"></div>
-              <div className="bg-[#D9D9D9] w-[55px] h-[55px] rounded-full"></div>
-            </div>
-          </div>
-
-          <div>
-            <p className="hidden md:block -rotate-90 text-white">
-              Opening Hours: 18:00 - 02:00
-            </p>
-          </div>
-        </div>
-      </div>
-
+        <img className="w-screen h-[280px]  object-cover md:h-[650px] " src={slider} alt="" />
+      
       {/* home 2  */}
       <div className="md:w-full md:h-[550px] md:flex-row flex flex-col items-center gap-10 mt-0 md:mt-6">
         <div className="md:[w-234px] md:block hidden md:h-[234px] md:relative md:bottom-24">
           <img src={gobi} alt="" />
         </div>
-        <div className=" px-20 md:px-0 w-[260px] h-[300px] md:w-[370px] md:h-[393px] bg-[#D9D9D9] mt-20"></div>
+        <img src={welcome} className=" w-[300px] h-[300px] md:w-[370px] md:h-[393px] object-fill mt-20"/>
         <div className="w-screen h-[470px] md:w-[592px] md:h-[359px] ">
           <div className="w-[160px] md:w-[170px] h-8 mx-auto md:ms-0 bg-primary mt-10 rounded-md  py-[6px] md:gap-[10px] md:px-4">
             <p className="text-white font-semibold text-sm uppercase text-center">
@@ -225,7 +204,7 @@ navigate("/gallery")
       <div>
         {/* section 3  */}
         <div className="w-screen h-[360px] mt-24 md:mt-28">
-          <div className=" flex flex-col justify-center items-center gap-[10px] mt-6 ">
+          <div className=" flex flex-col md:justify-center items-center gap-[10px] mt-6 ">
             <div className="w-[132px] bg-primary h-8 rounded-md py-[8px] px-4 ">
               <p className="uppercase font-semibold text-sm tracking-normal leading-[100%] text-white">
                 Our Services
@@ -256,10 +235,10 @@ navigate("/gallery")
         {serivcesboxes.map((items, id) => (
           <div
             key={id}
-            className="flex flex-col w-[205px] md:w-[410px] h-[540px] gap-2 space-y-4"
+            className="flex  flex-col w-[260px] md:w-[410px] h-[540px] gap-2 space-y-4"
           >
-            <div className="w-[230px] md:w-[340px] h-[250px] bg-[#D9D9D9]">
-              {items.img}
+            <div className="w-[250px] md:w-[340px] h-[250px] bg-[#D9D9D9]">
+            <img src={items.img} alt={items.headings} className="w-full h-full object-cover" />
             </div>
             <div className="font-bold  text-center md:text-left text-lg md:text-2xl leading-[100%] tracking-normal">
               {items.headings}
@@ -267,7 +246,7 @@ navigate("/gallery")
             <div className=" font-jost text-justify md:text-left text-base text-Paragraph leading-[26px] tracking-normal">
               {items.para}
             </div>
-            <div className="text-primary gap-2 border border-primary h-[45px] w-[192px] flex items-center justify-center">
+            <div className="text-primary mx-auto md:mx-0 gap-2 border border-primary h-[45px] w-[192px] flex items-center justify-center">
               {items.btn}
               <TfiLayoutLineSolid size={23} className="text-primary" />
               <HiOutlineArrowRight size={20} className="text-primary" />
@@ -311,7 +290,7 @@ navigate("/gallery")
         <div className=" flex flex-col justify-center items-center md:items-start md:flex-row gap-6 mt-20">
           {/* Div 1 */}
           <div className="md:block hidden w-[210px] md:w-[411px]">
-            <div className="w-[240px] md:w-[411px] h-[260px] bg-[#D9D9D9]"></div>
+            <img src={rost} className="w-[240px] md:w-[411px] h-[260px] bg-[#D9D9D9]"/>
             {foodmenu.map((items, id) => (
               <div
                 key={id}
@@ -340,7 +319,7 @@ navigate("/gallery")
                 className="flex flex-col mx-auto md:mx-0 items-center justify-center w-[261px] h-[392px] space-y-3"
               >
                 <div className="bg-[#D9D9D9] h-[261px] w-[260px] flex items-center justify-center">
-                  {items.img}
+                  <img className="h-[261px] w-[260px] " src={items.img} alt="" />
                 </div>
                 <div className="w-[84px] flex h-[10px] text-sm text-center font-black leading-[100%] tracking-normal">
                   {renderStars()}
@@ -418,7 +397,9 @@ navigate("/gallery")
                   </h1>
                   {/* </div> */}
                   <div className="flex relative right-11 mt-8 flex-wrap gap-4">
-                 <div onClick={handlenavigatec} className="relative w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
+                 <div
+                  style={{ backgroundImage: `url(${gallery4})` }}
+                   onClick={handlenavigate} className="relative bg-cover bg-center bg-no-repeat w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
                       <div className="absolute top-28 left-28 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <MdOutlineRemoveRedEye
                           size={40}
@@ -427,7 +408,9 @@ navigate("/gallery")
                         />
                       </div>
                     </div>
-                    <div onClick={handlenavigatec} className="relative w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
+                    <div
+                     style={{ backgroundImage: `url(${gallery3})` }}
+                      onClick={handlenavigate} className="relative bg-cover bg-center bg-no-repeat w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
                       <div className="absolute top-28 left-28 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <MdOutlineRemoveRedEye
                           size={40}
@@ -436,7 +419,9 @@ navigate("/gallery")
                         />
                       </div>
                     </div>
-                    <div onClick={handlenavigatec} className="relative w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
+                    <div 
+                     style={{ backgroundImage: `url(${gallery2})` }}
+                     onClick={handlenavigate} className="relative bg-cover bg-center bg-no-repeat w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
                       <div className="absolute top-28 left-28 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <MdOutlineRemoveRedEye
                           size={40}
@@ -445,7 +430,9 @@ navigate("/gallery")
                         />
                       </div>
                     </div>
-                   <div onClick={handlenavigatec} className="relative w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
+                   <div
+                   style={{ backgroundImage: `url(${gallery1})` }}
+                    onClick={handlenavigate} className="relative bg-cover bg-center bg-no-repeat w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
                       <div className="absolute top-28 left-28 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <MdOutlineRemoveRedEye
                           size={40}
@@ -454,7 +441,9 @@ navigate("/gallery")
                         />
                       </div>
                     </div>
-                    <div onClick={handlenavigatec} className="relative w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
+                    <div
+                    style={{backgroundImage:`url(${gallery6})`}}
+                     onClick={handlenavigate} className="relative bg-cover bg-center bg-no-repeat w-[250px] h-[287px] bg-[#D9D9D9] hover:bg-primary group">
                       <div className="absolute top-28 left-28 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <MdOutlineRemoveRedEye
                           size={40}

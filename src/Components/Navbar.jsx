@@ -6,6 +6,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -70,7 +71,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="w-screen absolute top-0 py-6 h-screen bg-white z-50">
+        <div className="w-screen overflow-hidden absolute top-0 py-6 h-screen bg-white z-50">
           <RxCross2
             onClick={() => setIsOpen(false)}
             size={24}

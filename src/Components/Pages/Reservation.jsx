@@ -12,12 +12,24 @@ export const Reservation = () => {
   const navigate = useNavigate();
 
   const fields = [
-    { label: "NUMBER OF GUEST *", placeholder: "person" },
-    { label: "SELECT DATE *", placeholder: "person" },
-    { label: "SELECT TIME *", placeholder: "person" },
-    { label: "YOUR NAME *", placeholder: "person" },
-    { label: "PHONE NUMBER *", placeholder: "person" },
-    { label: "EMAIL ADDRESS*", placeholder: "person" },
+    { label: "NUMBER OF GUEST *",
+       placeholder: "person"
+    },
+    { label: "SELECT DATE *",
+       placeholder: "person"
+     },
+    { label: "SELECT TIME *", 
+      placeholder: "person" 
+    },
+    { label: "YOUR NAME *",
+       placeholder: "person" 
+    },
+    { label: "PHONE NUMBER *",
+       placeholder: "person" 
+    },
+    { label: "EMAIL ADDRESS*",
+       placeholder: "person" 
+    },
     {
       label: "Type Your Special Message*",
       placeholder: "Type Your Special Message*",
@@ -32,7 +44,7 @@ export const Reservation = () => {
         <Navbar />
 
         <div className="bg-[#0A0A0ABA] py-24 w-screen h-[443px]">
-          <h1 className="text-[72px] font-jost font-semibold text-white text-center uppercase">
+          <h1 className="text-4xl md:text-[72px] font-jost font-semibold text-white text-center uppercase">
             Book A Table
           </h1>
 

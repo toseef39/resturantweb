@@ -5,82 +5,94 @@ import { useNavigate } from "react-router-dom";
 import { Abovefooter } from "../Abovefooter";
 import { Footer } from "../Footer";
 // import { CiStar } from "react-icons/ci";
+import beef from "../../assets/beef.webp"
+import tt from "../../assets/tt.jpg"
+import nn from "../../assets/nn.jpg"
+import rib2 from "../../assets/rib2.jpg"
+import veg from "../../assets/veg.jpg"
+import pasta from "../../assets/pasta.jpg"
+import salad from "../../assets/salad.jpg"
+import rost from "../../assets/rost.jpg"
+import ss from "../../assets/ss.jfif"
+import pp from "../../assets/pp.jfif"
+import vv from "../../assets/vv.jfif"
+import cake from "../../assets/cake.jpg"
 
 export const Shopdetails = () => {
   const navigate = useNavigate();
   const handleclick = () => {
-    navigate("shoppage");
+    navigate("/shop");
   };
 
   const members = [
     {
-      img: "",
+      img: beef,
       star: "⭐⭐⭐⭐⭐",
       name: "Beef Bourguignon",
       price: "$15.00",
     },
     {
-      img: "",
+      img: tt,
       star: "⭐⭐⭐⭐⭐",
       name: "Spicy Tuna Tartare",
       price: "$15.00",
     },
     {
-      img: "",
+      img: nn,
       star: "⭐⭐⭐⭐⭐",
       name: "Margherita Pizza",
       price: "$15.00",
     },
     {
-      img: "",
+      img: rib2,
       star: "⭐⭐⭐⭐⭐",
       name: "Braised Short Ribs",
       price: "$15.00",
     },
     {
-      img: "",
+      img: veg,
       star: "⭐⭐⭐⭐⭐",
       name: "Vegan Buddha Bowl",
       price: "$15.00",
     },
     {
-      img: "",
+      img: pasta,
       star: "⭐⭐⭐⭐⭐",
       name: "Chicken Alfredo Pasta",
       price: "$15.00",
     },
     {
-      img: "",
+      img: salad,
       star: "⭐⭐⭐⭐⭐",
       name: "Classic Caesar Salad",
       price: "$15.00",
     },
     {
-      img: "",
+      img: rost,
       star: "⭐⭐⭐⭐⭐",
       name: "Roasted Vegetable Platter",
       price: "$15.00",
     },
     {
-      img: "",
+      img: ss,
       star: "⭐⭐⭐⭐⭐",
       name: "Pulled Pork Sandwich",
       price: "$15.00",
     },
     {
-      img: "",
+      img: pp,
       star: "⭐⭐⭐⭐⭐",
       name: "Ahi Poke Bowl",
       price: "$15.00",
     },
     {
-      img: "",
+      img: cake,
       star: "⭐⭐⭐⭐⭐",
       name: "Chocolate Lava Cake",
       price: "$15.00",
     },
     {
-      img: "",
+      img: vv,
       star: "⭐⭐⭐⭐⭐",
       name: "Lobster Bisque",
       price: "$15.00",
@@ -102,7 +114,7 @@ export const Shopdetails = () => {
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
-          <h1 className="text-6xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
+          <h1 className="text-4xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase mt-32 md:mt-36 ">
             Shop PAGE
           </h1>
 
@@ -121,7 +133,7 @@ export const Shopdetails = () => {
               className="w-screen md:w-[302px] h-[392px] text-center flex flex-col"
             >
               <div className="w-[250px] md:w-[302px] mx-auto md:mx-0 h-[260px]  bg-[#D9D9D9]">
-                {items.img}
+                <img className="w-[250px] md:w-[302px] mx-auto md:mx-0 h-[260px] object-cover" src={items.img} alt="" />
               </div>
               <div className="border md:w-[302px] w-[250px] mx-auto h-32 space-y-3 py-2 border-[#DFDCDC]">
               <div className="font-black text-sm tracking-normal leading-[100%] ">{items.star}</div>

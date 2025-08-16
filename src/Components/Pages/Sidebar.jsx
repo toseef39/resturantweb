@@ -2,7 +2,15 @@ import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { FaArrowRight } from "react-icons/fa6";
-
+import side1 from "../../assets/side1.jfif"
+import side2 from "../../assets/side2.jfif"
+import side3 from "../../assets/side3.jfif"
+import gallery1 from "../../assets/gallery1.webp"
+import gallery2 from "../../assets/gallery2.jpg"
+import gallery3 from "../../assets/gallery3.jpg"
+import gallery4 from "../../assets/gallery4.jpg"
+import gallery5 from "../../assets/gallery5.jpg"
+import gallery6 from "../../assets/gallery6.jpg"
 export const Sidebar = () => {
     const tags = [
         "Advice",
@@ -17,19 +25,19 @@ export const Sidebar = () => {
     ]
   const recentpost = [
     {
-      img: "",
+      img: side1,
       icon: <CgProfile />,
       name: "by David Smith",
       position: "Craftsmanship of Artisanal Foods in Restaurants",
     },
     {
-      img: "",
+      img: side2,
       icon: <CgProfile />,
       name: "by David Smith",
       position: "Restaurants Are Adapting to Changing Dietary Trends",
     },
     {
-      img: "",
+      img: side3,
       icon: <CgProfile />,
       name: "by David Smith",
       position: "Passion and Perseverance from Renowned Chefs",
@@ -53,13 +61,13 @@ export const Sidebar = () => {
         {/* 2nd */}
         <div className="w-[327px] h-[395px] flex flex-col justify-center space-y-7">
           <h1 className="font-bold font-jost text-[20px] tracking-normal leading-[100%] uppercase ">
-            Recent Postsss
+            Recent Posts
           </h1>
           {recentpost.map((items, id) => (
             <div key={id} className="flex justify-between gap-4 items-center">
               <div className="min-w-[90px] min-h-[90px] bg-[#D9D9D9] ">
-                {items?.img}
-                {/* <img  className="min-w-[90px] min-h-[90px]"/> */}
+                
+                <img src={items?.img}  className="min-w-[90px] min-h-[90px]"/>
               </div>
               <div className="flex flex-col gap-2 justify-between ">
                 <div className="flex space-x-1">
@@ -132,10 +140,11 @@ export const Sidebar = () => {
         </h1>
         <div className=" w-[387px] h-[200px] flex flex-wrap items-center gap-2 ">
           {Array.from({ length: 6 }, (_, id) => (
-            <div
+            <img
+            src={gallery1}
               key={id}
               className="w-[95px] h-[95px] bg-[#D9D9D9]"
-            ></div>
+            />
           ))}
         </div>
         </div>

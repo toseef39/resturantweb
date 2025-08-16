@@ -4,37 +4,43 @@ import { Navbar } from "../Navbar";
 import { Abovefooter } from "../Abovefooter";
 import { Footer } from "../Footer";
 import { useNavigate } from "react-router-dom";
+import waiter from "../../assets/waiter.jpg"
+import waiter2 from "../../assets/waiter2.jfif"
+import waiter3 from "../../assets/waiter3.jpg"
+import waiter4 from "../../assets/waiter4.jpg"
+import waiter5 from "../../assets/waiter5.jfif"
+import waiter6 from "../../assets/waiter6.jpg"
 
 export const Chefteam = () => {
 const navigate = useNavigate()
   const team = [
     {
-      img: "",
+      img: waiter,
       name: "Kuman Tunman",
       position: "waiter",
     },
     {
-      img: "",
+      img: waiter2,
       name: "Benjamin Kenneth",
       position: "waiter",
     },
     {
-      img: "",
+      img: waiter3,
       name: "Matthew Nathaniel",
       position: "waiter",
     },
     {
-      img: "",
+      img: waiter4,
       name: "George  James",
       position: "waiter",
     },
     {
-      img: "",
+      img: waiter5,
       name: "Edward may",
       position: "waiter",
     },
     {
-      img: "",
+      img: waiter6,
       name: "Patrick Robert",
       position: "waiter",
     },
@@ -45,7 +51,7 @@ const navigate = useNavigate()
         <Topbar />
         <Navbar />
         <div className="bg-[#0A0A0ABA] w-screen h-[427px]">
-          <h1 className="text-6xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase  mt-36 ">
+          <h1 className="text-4xl md:text-7xl text-white font-jost font-semibold tracking-normal leading-[100%] text-center uppercase mt-32 md:mt-36 ">
             our chef
           </h1>
 
@@ -65,7 +71,7 @@ const navigate = useNavigate()
                 className="flex flex-col items-center mb-9 md:mb-0 md:gap-y-4"
               >
                 <div className="w-[250px] md:w-[350px] h-[390px] bg-[#D9D9D9]">
-                  {items.img}
+                  <img className="w-[250px] md:w-[350px] h-[390px] object-cover" src={items.img} alt="" />
                 </div>
                 <div className="font-extrabold tracking-normal mt-3 md:mt-0 text-center leading-[100%] text-[22px]">
                   {items.name}
